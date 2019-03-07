@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="author" content="Giovanni Martelli">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Circle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css" />
+    <a href="/template2.html"></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+</head>
+  <script>
+    $(document).ready(function() {
+
+      $("#area").click(function() {
+        var a = $("#radius").val();
+        $("#resultA").val((22 / 7) * (+a) * (+a));
+      });
+
+      $("#perimeter").click(function() {
+        var a = $("#radius").val();
+        $("#resultP").val((2) * (22 / 7) * (+a));
+      });
+    });
+  </script>
+
+
+<body>
+
+  <div id="wrapper">
+    <div id="banner">
+      <center>
+      <h1 id="bannertitle">Circle</h1>
+    </center>
+    </div>
+  <div>
+
+    <nav id="navigation">
+      <ul id="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cirkel.html">Circle</a></li>
+        <li><a href="vierkant.html">Rectangle</a></li>
+        <li><a href="temperatuur.html">Temperature</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+    </nav>
+    <div id="content area">
+<br>
+    Enter radius value in cm:
+    <input type="number" id="radius"> <br><br>
+    <button type="button" id="area"> Area </button>
+    <button type="button" id="perimeter"> Perimeter </button> <br><br>
+    Result Area:
+    <input type="number" id="resultA">
+    <br><br>
+    Result Perimeter: <input type="number" id="resultP">
+
+  </div>
+<br>
+  </div>
+
+  <footer>
+    <p>All rights reserved Giovanni Martelli 2019 ©</p>
+    <div id="validatie">
+<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+   <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+   <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+</a>
+</div>
+  </footer>
+</div>
+</body>
+</html>
